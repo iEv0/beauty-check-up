@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анкета запису на розбір · BEAUTY MBA 3 сезон</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1804729973532929');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1804729973532929&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-Light.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-Light.woff') format('woff');
+    font-weight: 300; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-LightItalic.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-LightItalic.woff') format('woff');
+    font-weight: 300; font-style: italic; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-Regular.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-Regular.woff') format('woff');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-Italic.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-Italic.woff') format('woff');
+    font-weight: 400; font-style: italic; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-Medium.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-Medium.woff') format('woff');
+    font-weight: 500; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-MediumItalic.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-MediumItalic.woff') format('woff');
+    font-weight: 500; font-style: italic; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-Bold.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-Bold.woff') format('woff');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('fonts/AktivGroteskCorp-BoldItalic.woff2') format('woff2'),
+         url('fonts/AktivGroteskCorp-BoldItalic.woff') format('woff');
+    font-weight: 700; font-style: italic; font-display: swap;
+  }
+</style>
+<style>
+  :root {
+    --cream: #F2EEE2;
+    --ivory: #F2EEE2;
+    --dark: #1E1C2E;
+    --burgundy: #360202;
+    --dusty: #9BA1BA;
+    --slate: #9BA1BA;
+    --gold: #9BA1BA;
+    --light-border: #DAD7CB;
+    --error: #360202;
+    --error-bg: #F3E7E5;
+    --error-border: #C79490;
+    --topbar-h: 48px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--ivory);
+    color: var(--dark);
+    font-family: 'Aktiv Grotesk Corp', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+    padding-top: 72px;
+  }
+
+
+  /* ── COLLAPSIBLE TOP SECTIONS ── */
+  #top-collapse, #form-intro-collapse {
+    overflow: hidden;
+    transition: max-height 0.45s ease, opacity 0.3s ease;
+    max-height: 2000px;
+    opacity: 1;
+  }
+  #top-collapse.hidden, #form-intro-collapse.hidden {
+    max-height: 0 !important;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* ── STICKY TOPBAR ── */
+  .topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    background: var(--dark);
+    color: var(--cream);
+    text-align: center;
+    padding: 6px 16px;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+  }
+  .topbar-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .topbar-dot { color: var(--gold); font-size: 8px; opacity: 0.6; }
+  .topbar strong { color: var(--gold); font-weight: 600; }
+  .topbar-places {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(155,161,186,0.12);
+    border: 1px solid rgba(155,161,186,0.25);
+    border-radius: 2px;
+    padding: 3px 12px;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+  .topbar-timer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  .timer-block {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 2px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 3px;
+    padding: 1px 6px;
+    min-width: 36px;
+    justify-content: center;
+  }
+  .timer-label {
+    font-size: 9px;
+    font-weight: 400;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .timer-sep { color: var(--gold); font-weight: 700; margin: 0 1px; }
+  .topbar-spots {
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.04em;
+  }
+  .topbar-spots strong {
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .topbar-places::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #4CAF50;
+    animation: pulse 2s infinite;
+    flex-shrink: 0;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  /* ── LAYOUT ── */
+  .page { max-width: 600px; margin: 0 auto; padding: 40px 24px 100px; }
+
+  /* ── EXPERT HERO ── */
+  .expert-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 36px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--light-border);
+  }
+  .expert-photo-wrap {
+    flex-shrink: 0;
+    width: 230px;
+  }
+  .expert-photo {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+    display: block;
+    background: var(--light-border);
+  }
+  .expert-info { flex: 1; padding-top: 4px; }
+  .expert-name {
+    font-family: 'Prata', serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .brand-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--burgundy);
+    border: 1px solid rgba(122,37,53,0.25);
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+  }
+  .expert-facts { list-style: none; }
+  .expert-facts li {
+    font-size: 13px;
+    color: var(--slate);
+    margin-bottom: 6px;
+    line-height: 1.45;
+    display: flex;
+    gap: 7px;
+  }
+  .expert-facts li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
+
+  @media (max-width: 460px) {
+    .expert-hero { flex-direction: column; align-items: center; gap: 16px; }
+    .expert-info { text-align: center; }
+    .expert-facts { text-align: left; }
+    .expert-facts li { justify-content: flex-start; text-align: left; }
+  }
+
+  /* ── FORM HEADER ── */
+  .form-tag {
+    display: inline-block;
+    background: var(--error-bg); border: 1px solid #FECACA; color: var(--burgundy);
+    font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 5px 14px; border-radius: 2px; margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'Prata', serif;
+    font-size: clamp(26px, 5vw, 36px);
+    font-weight: 400; line-height: 1.2; margin-bottom: 24px;
+  }
+  h1 strong { font-weight: 600; }
+
+  /* ── INTRO CARD ── */
+  .intro-card {
+    background: white; border: 1px solid var(--light-border);
+    border-left: 3px solid var(--burgundy); border-radius: 4px;
+    padding: 22px 22px 22px 20px; margin-bottom: 18px;
+    font-size: 14px; color: var(--slate); line-height: 1.8;
+  }
+  .intro-card p { margin-bottom: 10px; }
+  .intro-card p:last-child { margin-bottom: 0; }
+  .intro-arrow { display: flex; gap: 8px; margin-bottom: 6px; font-size: 14px; }
+  .intro-arrow::before { content: '→'; color: var(--burgundy); flex-shrink: 0; }
+
+  /* ── BENEFITS ── */
+  .benefits {
+    background: var(--cream); border: 1px solid var(--light-border);
+    border-radius: 4px; padding: 18px 20px; margin-bottom: 22px; font-size: 14px;
+  }
+  .benefits-title { font-weight: 500; font-size: 13px; margin-bottom: 10px; color: var(--dark); }
+  .benefit-item { display: flex; gap: 8px; margin-bottom: 6px; color: var(--slate); line-height: 1.5; }
+  .benefit-item::before { content: '›'; color: var(--burgundy); font-weight: 700; }
+  .form-note { font-size: 12px; color: var(--dusty); margin-bottom: 34px; text-align: center; letter-spacing: 0.04em; }
+
+  /* ── STEP INDICATOR ── */
+  .step-indicator { display: flex; align-items: center; gap: 8px; margin-bottom: 30px; }
+  .step-dot {
+    width: 30px; height: 30px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 500; flex-shrink: 0;
+    transition: all 0.3s; border: 1.5px solid var(--light-border);
+    background: white; color: var(--dusty);
+  }
+  .step-dot.active { border-color: var(--burgundy); color: var(--burgundy); background: var(--error-bg); }
+  .step-dot.done { border-color: var(--burgundy); background: var(--burgundy); color: white; font-size: 14px; }
+  .step-line { flex: 1; height: 1.5px; background: var(--light-border); transition: background 0.3s; }
+  .step-line.done { background: var(--burgundy); }
+
+  /* ── PANELS ── */
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .panel-title { font-family: 'Prata', serif; font-size: 22px; font-weight: 400; margin-bottom: 5px; }
+  .panel-hint { font-size: 13px; color: var(--dusty); margin-bottom: 26px; line-height: 1.5; }
+
+  /* ── FIELDS ── */
+  .field { margin-bottom: 20px; }
+  .field-label {
+    display: block; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--slate); margin-bottom: 8px;
+  }
+  .field-label span { color: var(--burgundy); }
+  input[type="text"] {
+    width: 100%; padding: 13px 16px;
+    border: 1px solid var(--light-border); border-radius: 4px;
+    font-family: 'Aktiv Grotesk Corp', sans-serif; font-size: 15px; font-weight: 300;
+    color: var(--dark); background: white; outline: none;
+    transition: border-color 0.2s; -webkit-appearance: none;
+  }
+  input:focus { border-color: var(--burgundy); }
+  input.err { border-color: var(--error-border); background: var(--error-bg); }
+  .field-error { font-size: 12px; color: var(--error); margin-top: 5px; display: none; }
+  .field-error.on { display: block; }
+
+  /* ── RADIO ── */
+  .rgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .rgrid.col1 { grid-template-columns: 1fr; }
+  @media (max-width: 420px) { .rgrid { grid-template-columns: 1fr; } }
+  .ropt {
+    border: 1px solid var(--light-border); border-radius: 4px;
+    padding: 12px 36px 12px 16px; cursor: pointer;
+    font-size: 13px; line-height: 1.45; background: white;
+    transition: all 0.15s; user-select: none; color: var(--dark); position: relative;
+  }
+  .ropt:hover { border-color: #B0A098; }
+  .ropt.sel { border-color: var(--burgundy); background: var(--error-bg); color: var(--burgundy); font-weight: 500; }
+  .ropt.sel::after {
+    content: '✓'; position: absolute; right: 12px; top: 50%;
+    transform: translateY(-50%); font-size: 12px; color: var(--burgundy);
+  }
+  .form-divider { border: none; border-top: 1px solid var(--light-border); margin: 22px 0; }
+
+  /* ── BUTTONS ── */
+  .btn {
+    width: 100%; padding: 15px 24px;
+    background: var(--burgundy); color: white; border: none; border-radius: 4px;
+    font-family: 'Aktiv Grotesk Corp', sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    cursor: pointer; margin-top: 8px; transition: background 0.2s, transform 0.15s;
+  }
+  .btn:hover { background: #5E1D28; transform: translateY(-1px); }
+  .btn:disabled { background: var(--dusty); cursor: not-allowed; transform: none; }
+  .cases-hint {
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    font-size: 12px; color: var(--dusty); text-align: center;
+    margin-top: 18px; letter-spacing: 0.03em;
+  }
+  .cases-hint-arrow {
+    display: inline-block; color: var(--burgundy);
+    animation: hintBounce 1.6s ease-in-out infinite;
+  }
+  @keyframes hintBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+  }
+  .btn-back {
+    display: block; text-align: center; font-size: 12px; color: var(--dusty);
+    cursor: pointer; margin-top: 16px; letter-spacing: 0.04em;
+  }
+  .btn-back:hover { color: var(--dark); }
+  .legal { font-size: 12px; color: var(--dusty); text-align: center; margin-top: 14px; line-height: 1.5; }
+
+  /* ── THANK YOU ── */
+  #ty-state { display: none; }
+  #ty-state.on { display: block; }
+  #form-main.hidden { display: none; }
+  .ty-wrap { text-align: center; padding: 20px 0; }
+  .ty-emoji { font-size: 52px; margin-bottom: 20px; display: block; }
+  .ty-title {
+    font-family: 'Prata', serif;
+    font-size: 32px; font-weight: 400; line-height: 1.3; margin-bottom: 14px;
+  }
+  .ty-sub {
+    font-size: 15px; color: var(--slate); line-height: 1.85;
+    margin-bottom: 36px; max-width: 440px; margin-left: auto; margin-right: auto;
+  }
+
+  /* Gift card */
+  .gift-card {
+    background: white; border: 1px solid var(--light-border);
+    border-radius: 6px; padding: 28px; text-align: left; margin-bottom: 24px;
+  }
+  .gift-tag {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--dusty); margin-bottom: 10px;
+  }
+  .gift-title {
+    font-family: 'Prata', serif;
+    font-size: 26px; font-weight: 600; margin-bottom: 8px; line-height: 1.2;
+  }
+  .gift-desc { font-size: 14px; color: var(--slate); line-height: 1.7; margin-bottom: 16px; }
+  .gift-btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    background: #26A5E4; color: white;
+    padding: 14px; border-radius: 4px; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.04em; text-decoration: none; transition: background 0.2s;
+  }
+  .gift-btn:hover { background: #1d8fc7; }
+  .gift-btn svg { flex-shrink: 0; }
+
+  /* Social follow */
+  .social-prompt { font-size: 13px; color: var(--slate); margin-bottom: 12px; text-align: center; }
+  .social-btns { display: flex; gap: 10px; justify-content: center; }
+  .social-btn {
+    flex: 1; padding: 11px 16px; border: 1px solid var(--light-border);
+    border-radius: 4px; font-size: 13px; font-weight: 500;
+    text-decoration: none; color: var(--dark); text-align: center;
+    transition: border-color 0.2s, color 0.2s;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .social-btn:hover { border-color: var(--burgundy); color: var(--burgundy); }
+
+  /* ── КЕЙСИ ТА ВІДГУКИ ── */
+  .social-proof-section {
+    background: var(--dark);
+    padding: 60px 24px 80px;
+    margin-top: 0;
+  }
+  .sp-section-title {
+    font-family: 'Prata', serif;
+    font-size: 22px;
+    color: var(--cream);
+    text-align: center;
+    margin-bottom: 32px;
+    letter-spacing: 0.01em;
+  }
+
+  /* Кейси */
+  .cases-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .case-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(155,161,186,0.2);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .case-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 24px;
+  }
+  .case-avatar {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid rgba(155,161,186,0.35);
+    flex-shrink: 0;
+  }
+  .case-name { font-family: 'Prata', serif; font-size: 17px; font-weight: 400; color: var(--cream); }
+  .case-role { font-size: 12px; color: var(--slate); margin-top: 3px; }
+  .case-points {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 0 24px 24px;
+  }
+  .case-col { flex: 1; }
+  .case-col-title {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .case-item {
+    font-size: 12px;
+    line-height: 1.45;
+    margin-bottom: 7px;
+    padding-left: 14px;
+    position: relative;
+    color: var(--cream);
+    opacity: 0.85;
+  }
+  .case-item--before::before { content: '—'; position: absolute; left: 0; color: var(--slate); }
+  .case-item--after::before { content: '✓'; position: absolute; left: 0; color: var(--cream); }
+  .case-arrow {
+    font-size: 20px;
+    color: var(--gold);
+    padding-top: 20px;
+    flex-shrink: 0;
+  }
+
+  /* Відгуки — скрін-фото, карусель */
+  .reviews-carousel { position: relative; max-width: 600px; margin: 0 auto; }
+  .reviews-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 2px 2px 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .reviews-grid::-webkit-scrollbar { display: none; }
+  .review-shot-link {
+    flex: 0 0 auto;
+    width: 145px;
+    scroll-snap-align: start;
+  }
+  @media (max-width: 460px) {
+    .review-shot-link { width: 130px; }
+  }
+  .review-shot {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(155,161,186,0.25);
+    cursor: zoom-in;
+    transition: transform 0.2s;
+  }
+  .review-shot:hover { transform: scale(1.02); }
+  .reviews-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--dark);
+    border: 1px solid rgba(155,161,186,0.4);
+    color: var(--cream);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 2;
+  }
+  .reviews-nav:hover { background: #2A2740; }
+  .reviews-nav.prev { left: -14px; }
+  .reviews-nav.next { right: -14px; }
+  @media (max-width: 640px) {
+    .reviews-nav.prev { left: -6px; }
+    .reviews-nav.next { right: -6px; }
+  }
+
+  /* Статистика */
+  .sp-stats {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-top: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(155,161,186,0.2);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .sp-stat {
+    flex: 1;
+    text-align: center;
+    padding: 20px 12px;
+    border-right: 1px solid rgba(155,161,186,0.15);
+  }
+  .sp-stat:last-child { border-right: none; }
+  .sp-stat-num {
+    font-family: 'Prata', serif;
+    font-size: 28px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .sp-stat-label {
+    font-size: 11px;
+    color: var(--slate);
+    line-height: 1.4;
+  }
+
+  /* CTA після кейсів/відгуків */
+  .sp-cta { max-width: 600px; margin: 32px auto 0; }
+  .sp-cta-btn { margin-top: 0; }
+
+  /* Лайтбокс для відгуків */
+  .review-lightbox {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(10,9,16,0.92);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+  }
+  .review-lightbox.on { display: flex; }
+  .lb-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  }
+  .lb-close {
+    position: absolute; top: 16px; right: 20px;
+    width: 38px; height: 38px; border-radius: 50%;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);
+    color: var(--cream); font-size: 16px; cursor: pointer;
+  }
+  .lb-close:hover { background: rgba(255,255,255,0.16); }
+  .lb-nav {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);
+    color: var(--cream); font-size: 18px; cursor: pointer;
+  }
+  .lb-nav:hover { background: rgba(255,255,255,0.16); }
+  .lb-prev { left: 16px; }
+  .lb-next { right: 16px; }
+  @media (max-width: 460px) {
+    .lb-nav { width: 36px; height: 36px; font-size: 15px; }
+    .lb-prev { left: 6px; }
+    .lb-next { right: 6px; }
+  }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    background: var(--dark);
+    border-top: 2px solid var(--burgundy);
+    padding: 32px 24px 28px;
+    margin-top: 0;
+  }
+  .footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(155,161,186,0.2);
+  }
+  .footer-brand {
+    font-family: 'Prata', serif;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: var(--cream);
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .footer-links a {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--slate);
+    text-decoration: none;
+  }
+  .footer-links a:hover { color: var(--cream); }
+  .footer-req-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin: 20px 0 10px;
+  }
+  .footer-req-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 40px;
+  }
+  .footer-req-item { font-size: 12px; color: var(--cream); opacity: 0.85; line-height: 1.6; }
+  .footer-req-item span { display: block; color: var(--slate); opacity: 0.85; }
+</style>
+</head>
+<body>
+
+<!-- ── STICKY TOPBAR ── -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-places">⏳ Набір на BEAUTY MBA [3 сезон] закривається <span style="white-space:nowrap">17/09 о 23:59</span></div>
+    <div class="topbar-spots">🔴 На цьому тижні залишилось <strong>3 місця</strong> на розбір</div>
+    <div class="topbar-timer">
+      <span class="timer-block"><span id="t-days">00</span><span class="timer-label">дн</span></span>
+      <span class="timer-sep">:</span>
+      <span class="timer-block"><span id="t-hours">00</span><span class="timer-label">год</span></span>
+      <span class="timer-sep">:</span>
+      <span class="timer-block"><span id="t-mins">00</span><span class="timer-label">хв</span></span>
+      <span class="timer-sep">:</span>
+      <span class="timer-block"><span id="t-secs">00</span><span class="timer-label">сек</span></span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- ── COLLAPSIBLE TOP ── -->
+  <div id="top-collapse">
+
+  <!-- ── EXPERT HERO ── -->
+  <div class="expert-hero">
+    <div class="expert-photo-wrap">
+      <img class="expert-photo" src="lera_photo.jpg" alt="Валерія Пономарьова" onerror="this.style.background='#E2D9CE'">
+    </div>
+    <div class="expert-info">
+      <div class="expert-name">Валерія Пономарьова</div>
+      <div class="brand-tag">MANICULT · BEAUTY MBA</div>
+      <ul class="expert-facts">
+        <li>У бʼюті сфері вже більше 10 років</li>
+        <li>Пройшла шлях від маленького кабінету у 10 м² до великої студії манікюру з командою понад 20 людей — всього за два роки</li>
+        <li>Практичний досвід побудови системи в двох країнах — в Україні та Південній Африці</li>
+        <li>Салон у Кейптауні за перші місяці роботи виріс до обороту понад 55 000$</li>
+        <li>5 років керую дистанційно MANICULT в Києві витрачаючи 30 хвилин на день</li>
+        <li>Учениці ростуть ×2 в доході за 3 місяці</li>
+      </ul>
+    </div>
+  </div>
+
+  </div><!-- /top-collapse -->
+
+  <!-- ── FORM MAIN ── -->
+  <div id="form-main">
+    <div class="form-tag">Передзапис відкрито</div>
+    <h1>Дізнайся, чи підходиш ти для <strong>BEAUTY MBA</strong> <span style="opacity:0.6;font-size:0.75em">[3 сезон]</span> — і отримай безкоштовний розбір свого салону</h1>
+
+    <div id="form-intro-collapse">
+    <div class="intro-card">
+      <p>Привіт, це Лера.<br>Якщо ти тут — значить, у нас вже є певний метч. Можливо, ти і майстер, і директор, і адмін в одній особі. Або відчуваєш, що вкладаєш все більше, а результат не змінюється. Або просто розумієш, що так далі — не можна.</p>
+      <p>Заповни за 60 секунд — і я особисто підготую конкретні кроки під твою ситуацію ще до нашого дзвінка.</p>
+      <p>Після заповнення я особисто звʼяжуся з тобою, щоб обговорити безкоштовний розбір, де:</p>
+      <div class="intro-arrow">Занурюємось у твою ситуацію та запит</div>
+      <div class="intro-arrow">Формуємо майнд-карту з кроками конкретно під твою ситуацію</div>
+      <div class="intro-arrow">Якщо бачу, що зможу дати тобі результат — розповідаю як приєднатись за умовами передзапису до <strong>BEAUTY MBA</strong></div>
+    </div>
+
+    <div class="benefits">
+      <div class="benefits-title">Заповнивши анкету, ти також отримаєш:</div>
+      <div class="benefit-item">Зафіксуєш за собою найнижчу вартість участі в програмі</div>
+      <div class="benefit-item">Знижку від 400€ та бонуси на 630€+ до будь-якого тарифу 🎁</div>
+      <div class="benefit-item">Подарунки від BEAUTY MBA — добірка найкорисніших файлів для майстрів і власниць салонів: інтенсив, чек-листи, таблиці та макети, щоб зібрати команду, завантажити салон і контролювати метрики, які реально впливають на дохід</div>
+    </div>
+
+    <p class="form-note">Заповнення займає 1 хвилину</p>
+    </div><!-- /form-intro-collapse -->
+
+    <!-- STEP INDICATOR -->
+    <div class="step-indicator">
+      <div class="step-dot active" id="dot1">1</div>
+      <div class="step-line" id="line1"></div>
+      <div class="step-dot" id="dot2">2</div>
+    </div>
+
+    <!-- PANEL 1 -->
+    <div class="panel active" id="panel1">
+      <div class="panel-title">Крок 1 — Контакти</div>
+      <p class="panel-hint">Перевір дані — щоб я точно змогла з тобою звʼязатись</p>
+
+      <div class="field">
+        <label class="field-label">Як тебе звати? <span>*</span></label>
+        <input type="text" id="fName" placeholder="Твоє імʼя">
+        <div class="field-error" id="errName">Введи своє імʼя</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label">Номер або нікнейм Telegram <span>*</span></label>
+        <input type="text" id="fTg" placeholder="+380 XX XXX XX XX або @username">
+        <div class="field-error" id="errTg">Введи номер або Telegram</div>
+      </div>
+
+      <div class="field">
+        <label class="field-label">Нікнейм в Instagram <span>*</span></label>
+        <input type="text" id="fInsta" placeholder="@твій_нікнейм">
+        <div class="field-error" id="errInsta">Введи нікнейм в Instagram</div>
+      </div>
+
+      <button class="btn" onclick="goPanel2()">Далі →</button>
+      <div class="cases-hint">Кейси учениць і відгуки — нижче<span class="cases-hint-arrow">↓</span></div>
+    </div>
+
+    <!-- PANEL 2 -->
+    <div class="panel" id="panel2">
+      <div class="panel-title">Крок 2 — Кілька питань</div>
+      <p class="panel-hint">Це допоможе підготуватись до розмови конкретно під твою ситуацію</p>
+
+      <div class="field">
+        <label class="field-label">Який твій основний вид діяльності? <span>*</span></label>
+        <div class="rgrid col1" id="actGrid">
+          <div class="ropt" data-val="owner">Я власниця салону</div>
+          <div class="ropt" data-val="manager">Я керуюча студією / мережею</div>
+          <div class="ropt" data-val="master-owner">Я майстриня й паралельно розвиваю свій салон</div>
+          <div class="ropt" data-val="planning">Я планую відкрити салон</div>
+        </div>
+        <div class="field-error" id="errAct">Оберіть варіант</div>
+      </div>
+
+      <hr class="form-divider">
+
+      <div class="field">
+        <label class="field-label">Як давно ти підписана на мене? <span>*</span></label>
+        <div class="rgrid" id="subGrid">
+          <div class="ropt" data-val="lt1m">До 1 місяця</div>
+          <div class="ropt" data-val="1-2m">1–2 місяці</div>
+          <div class="ropt" data-val="3-5m">3–5 місяців</div>
+          <div class="ropt" data-val="6-12m">6–12 місяців</div>
+          <div class="ropt" data-val="1y+">Більше року</div>
+          <div class="ropt" data-val="2-3y+">2–3+ роки</div>
+        </div>
+        <div class="field-error" id="errSub">Оберіть варіант</div>
+      </div>
+
+      <hr class="form-divider">
+
+      <div class="field">
+        <label class="field-label">Поточний оборот салону за місяць <span>*</span></label>
+        <div class="rgrid col1" id="revGrid">
+          <div class="ropt" data-val="lt80">До 80 000 грн</div>
+          <div class="ropt" data-val="80-200">від 80 000 до 200 000 грн</div>
+          <div class="ropt" data-val="200-500">від 200 000 до 500 000 грн</div>
+          <div class="ropt" data-val="500-1m">від 500 000 до 1 млн грн</div>
+          <div class="ropt" data-val="1m+">Більше 1 млн грн</div>
+        </div>
+        <div class="field-error" id="errRev">Оберіть варіант</div>
+      </div>
+
+      <hr class="form-divider">
+
+      <div class="field">
+        <label class="field-label">Наскільки ти зараз готова до участі в BEAUTY MBA 3 сезон? <span>*</span></label>
+        <div class="rgrid col1" id="readyGrid">
+          <div class="ropt" data-val="100">100% готова приєднатись</div>
+          <div class="ropt" data-val="want-details">Хочу і можу, але хочу більше деталей</div>
+        </div>
+        <div class="field-error" id="errReady">Оберіть варіант</div>
+      </div>
+
+      <p style="font-size:12px;color:var(--slate);text-align:center;margin-bottom:16px;line-height:1.5;">📲 Після заповнення я напишу тобі в Telegram протягом 2 годин і запропоную зручний час для безкоштовного розбору</p>
+      <button class="btn" id="submitBtn" onclick="submitForm()">Надіслати анкету</button>
+      <div class="btn-back" onclick="goPanel1()">← Назад</div>
+      <p class="legal">✦ Натискаючи кнопку ти погоджуєшся на обробку персональних даних</p>
+    </div>
+  </div>
+
+  <!-- ── THANK YOU ── -->
+  <div id="ty-state">
+    <div class="ty-wrap">
+      <span class="ty-emoji">🌸</span>
+      <h2 class="ty-title">Дякую — відпишу<br>найближчим часом</h2>
+      <p class="ty-sub">Я особисто переглянула твою анкету і звʼяжусь з тобою, щоб узгодити час безкоштовного розбору твого бізнесу.</p>
+
+      <div class="gift-card">
+        <div class="gift-tag">🎁 Твій подарунок вже готовий</div>
+        <div class="gift-title">Знижка від 400€ + бонуси на 630€+</div>
+        <p class="gift-desc">Бонусні матеріали вже в закріплених у Telegram каналі — переходь за кнопкою:</p>
+        <a href="https://t.me/+rJxxiQxqpx0xYmZi" target="_blank" class="gift-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.7 8.02c-.12.55-.45.68-.9.42l-2.5-1.84-1.2 1.16c-.13.13-.24.24-.5.24l.18-2.55 4.64-4.19c.2-.18-.04-.28-.31-.1L8.27 14.4l-2.47-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.11.7.68z" fill="white"/>
+          </svg>
+          Отримати бонусні матеріали в Telegram
+        </a>
+      </div>
+
+      <p class="social-prompt">Слідкуй за анонсами — підпишись:</p>
+      <div class="social-btns">
+        <a href="https://t.me/+rJxxiQxqpx0xYmZi" target="_blank" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.7 8.02c-.12.55-.45.68-.9.42l-2.5-1.84-1.2 1.16c-.13.13-.24.24-.5.24l.18-2.55 4.64-4.19c.2-.18-.04-.28-.31-.1L8.27 14.4l-2.47-.77c-.54-.17-.55-.54.11-.8l9.63-3.71c.45-.17.84.11.7.68z" fill="currentColor"/></svg>
+          Telegram
+        </a>
+        <a href="https://www.instagram.com/valeria.vulakh/" target="_blank" class="social-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<!-- ── КЕЙСИ ТА ВІДГУКИ ── -->
+<div class="social-proof-section">
+
+  <div class="sp-section-title">Власниці, які вже пройшли програму</div>
+
+  <!-- КЕЙСИ -->
+  <div class="cases-grid">
+
+    <div class="case-card">
+      <div class="case-header">
+        <img class="case-avatar" src="cases/case_yaroslava.jpg" alt="Ярослава">
+        <div>
+          <div class="case-name">Ярослава</div>
+          <div class="case-role">Власниця салону манікюру poruch.beauty, Одеса</div>
+        </div>
+      </div>
+      <div class="case-points">
+        <div class="case-col">
+          <div class="case-col-title">Точка А</div>
+          <div class="case-item case-item--before">Робота 24/7 в ролі майстра</div>
+          <div class="case-item case-item--before">Хаос у фінансах</div>
+          <div class="case-item case-item--before">Чотири кредити на суму 250 000 грн</div>
+        </div>
+        <div class="case-arrow">→</div>
+        <div class="case-col">
+          <div class="case-col-title">Точка Б</div>
+          <div class="case-item case-item--after">Оборот виріс у 2 рази за час навчання</div>
+          <div class="case-item case-item--after">Впровадили прозору аналітику фінансів (P&L)</div>
+          <div class="case-item case-item--after">Збільшила команду та систематизувала процеси</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-header">
+        <img class="case-avatar" src="cases/case_zoryana.jpg" alt="Зоряна">
+        <div>
+          <div class="case-name">Зоряна</div>
+          <div class="case-role">Власниця двох салонів NAIL ON у Львові</div>
+        </div>
+      </div>
+      <div class="case-points">
+        <div class="case-col">
+          <div class="case-col-title">Точка А</div>
+          <div class="case-item case-item--before">Перевіряла кожну дрібницю за командою</div>
+          <div class="case-item case-item--before">Хаос у фінансах — CRM не показувала реальну картину</div>
+          <div class="case-item case-item--before">Страх: «якщо я її зараз звільню, то все впаде на мене»</div>
+        </div>
+        <div class="case-arrow">→</div>
+        <div class="case-col">
+          <div class="case-col-title">Точка Б</div>
+          <div class="case-item case-item--after">Фінансова прозорість — робоча P&L-таблиця, яку веде постійно</div>
+          <div class="case-item case-item--after">Автономна команда, яка може працювати без залученості Зоряни</div>
+          <div class="case-item case-item--after">Перейшла у роль власниці-стратега, яка не займається всім у салоні</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-header">
+        <img class="case-avatar" src="cases/case_yulia.jpg" alt="Юля Гюлмезоглу">
+        <div>
+          <div class="case-name">Юля Гюлмезоглу</div>
+          <div class="case-role">Власниця косметологічного салону «Touch Cosmetology» у Туреччині</div>
+        </div>
+      </div>
+      <div class="case-points">
+        <div class="case-col">
+          <div class="case-col-title">Точка А</div>
+          <div class="case-item case-item--before">Токсичні працівники, які тягнули всю команду вниз</div>
+          <div class="case-item case-item--before">Відсутність роботи з базою клієнтів</div>
+          <div class="case-item case-item--before">Не працювали з місцевою аудиторією</div>
+        </div>
+        <div class="case-arrow">→</div>
+        <div class="case-col">
+          <div class="case-col-title">Точка Б</div>
+          <div class="case-item case-item--after">Змінила команду</div>
+          <div class="case-item case-item--after">Системно працюють з базою клієнтів</div>
+          <div class="case-item case-item--after">Зробили рекордну касу — 200 000 грн за день</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ВІДГУКИ -->
+  <div class="sp-section-title" style="margin-top:48px">Що кажуть про роботу з Лерою</div>
+
+  <div class="reviews-carousel">
+    <div class="reviews-nav prev" onclick="document.getElementById('reviewsGrid').scrollBy({left:-300,behavior:'smooth'})">←</div>
+    <div class="reviews-grid" id="reviewsGrid">
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(1)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/01.webp" alt="Відгук ученіці 1"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(2)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/02.webp" alt="Відгук ученіці 2"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(3)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/03.webp" alt="Відгук ученіці 3"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(4)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/04.webp" alt="Відгук ученіці 4"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(5)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/05.webp" alt="Відгук ученіці 5"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(6)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/06.webp" alt="Відгук ученіці 6"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(7)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/07.webp" alt="Відгук ученіці 7"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(8)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/08.webp" alt="Відгук ученіці 8"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(9)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/09.webp" alt="Відгук ученіці 9"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(10)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/10.webp" alt="Відгук ученіці 10"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(11)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/11.webp" alt="Відгук ученіці 11"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(12)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/12.webp" alt="Відгук ученіці 12"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(13)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/13.webp" alt="Відгук ученіці 13"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(14)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/14.webp" alt="Відгук ученіці 14"></a>
+    </div>
+    <div class="reviews-nav next" onclick="document.getElementById('reviewsGrid').scrollBy({left:300,behavior:'smooth'})">→</div>
+  </div>
+
+  <!-- ЦИФРИ -->
+  <div class="sp-stats">
+    <div class="sp-stat">
+      <div class="sp-stat-num">22+</div>
+      <div class="sp-stat-label">власниць пройшли програму</div>
+    </div>
+    <div class="sp-stat">
+      <div class="sp-stat-num">×2</div>
+      <div class="sp-stat-label">середнє зростання доходу за 3 місяці</div>
+    </div>
+    <div class="sp-stat">
+      <div class="sp-stat-num">30 хв</div>
+      <div class="sp-stat-label">на день на управління після програми</div>
+    </div>
+  </div>
+
+  <div class="sp-cta">
+    <button class="btn sp-cta-btn" onclick="scrollToForm()">Заповнити анкету</button>
+  </div>
+
+</div><!-- /social-proof-section -->
+
+<!-- ── LIGHTBOX ── -->
+<div class="review-lightbox" id="reviewLightbox" onclick="if(event.target===this) closeReviewLightbox()">
+  <button class="lb-close" onclick="closeReviewLightbox()" aria-label="Закрити">✕</button>
+  <button class="lb-nav lb-prev" onclick="lightboxStep(-1)" aria-label="Попередній">←</button>
+  <img class="lb-img" id="lbImg" src="" alt="Відгук">
+  <button class="lb-nav lb-next" onclick="lightboxStep(1)" aria-label="Наступний">→</button>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">BEAUTY MBA</div>
+      <div class="footer-links">
+        <a href="https://t.me/+rJxxiQxqpx0xYmZi" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.instagram.com/valeria.vulakh/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://docs.google.com/document/d/1wwd2imhoLRCEoE7s7H5dZQS_jwqx_HP_NdiccDPbURI/edit?usp=sharing" target="_blank" rel="noopener">Політика конфіденційності</a>
+        <a href="https://docs.google.com/document/d/1akmkH76QPV1oV2q8fft9r3eNwJqDPt1HiRpdWw8ELXY/edit?usp=sharing" target="_blank" rel="noopener">Публічна оферта</a>
+      </div>
+    </div>
+    <div class="footer-req-label">Реквізити</div>
+    <div class="footer-req-grid">
+      <div class="footer-req-item">ФОП Пономарьова Валерія Юріївна<span>ІПН: 3251216881</span></div>
+      <div class="footer-req-item">ФОП Іванова Алла Анатоліївна<span>ІПН: 2416700220</span></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwX766a6ezg9MJlKBrC36TzOReMeW9ITPwS92_Z8KBEacyQNs5RdgWrhWRQo8EB5p2lXA/exec';
+var sel = { act: '', sub: '', rev: '', ready: '' };
+var utmSource = new URLSearchParams(window.location.search).get('source') || 'direct';
+
+function initGrid(gridId, key, errId) {
+  document.querySelectorAll('#' + gridId + ' .ropt').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      document.querySelectorAll('#' + gridId + ' .ropt').forEach(function(o) { o.classList.remove('sel'); });
+      opt.classList.add('sel');
+      sel[key] = opt.getAttribute('data-val');
+      document.getElementById(errId).classList.remove('on');
+    });
+  });
+}
+initGrid('actGrid',   'act',   'errAct');
+initGrid('subGrid',   'sub',   'errSub');
+initGrid('revGrid',   'rev',   'errRev');
+initGrid('readyGrid', 'ready', 'errReady');
+
+function req(id, errId) {
+  var v = document.getElementById(id).value.trim();
+  if (!v) {
+    document.getElementById(errId).classList.add('on');
+    document.getElementById(id).classList.add('err');
+    return false;
+  }
+  document.getElementById(errId).classList.remove('on');
+  document.getElementById(id).classList.remove('err');
+  return true;
+}
+
+window.goPanel2 = function() {
+  var ok = req('fName','errName') & req('fTg','errTg') & req('fInsta','errInsta');
+  if (!ok) return;
+  document.getElementById('panel1').classList.remove('active');
+  document.getElementById('panel2').classList.add('active');
+  var d1 = document.getElementById('dot1');
+  d1.classList.remove('active'); d1.classList.add('done'); d1.textContent = '✓';
+  document.getElementById('line1').classList.add('done');
+  document.getElementById('dot2').classList.add('active');
+  // Hide top sections
+  document.getElementById('top-collapse').classList.add('hidden');
+  document.getElementById('form-intro-collapse').classList.add('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+window.goPanel1 = function() {
+  document.getElementById('panel2').classList.remove('active');
+  document.getElementById('panel1').classList.add('active');
+  var d1 = document.getElementById('dot1');
+  d1.classList.remove('done'); d1.classList.add('active'); d1.textContent = '1';
+  document.getElementById('line1').classList.remove('done');
+  document.getElementById('dot2').classList.remove('active');
+  // Restore top sections
+  document.getElementById('top-collapse').classList.remove('hidden');
+  document.getElementById('form-intro-collapse').classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+window.submitForm = function() {
+  var ok = true;
+  if (!sel.act)   { document.getElementById('errAct').classList.add('on');   ok = false; }
+  if (!sel.sub)   { document.getElementById('errSub').classList.add('on');   ok = false; }
+  if (!sel.rev)   { document.getElementById('errRev').classList.add('on');   ok = false; }
+  if (!sel.ready) { document.getElementById('errReady').classList.add('on'); ok = false; }
+  if (!ok) return;
+
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true; btn.textContent = 'Надсилаємо…';
+
+  fetch(SCRIPT_URL, {
+    method: 'POST', mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain' },
+    body: JSON.stringify({
+      source:    utmSource,
+      name:      document.getElementById('fName').value.trim(),
+      telegram:  document.getElementById('fTg').value.trim(),
+      instagram: document.getElementById('fInsta').value.trim(),
+      activity:  sel.act,
+      subscribed: sel.sub,
+      revenue:   sel.rev,
+      readiness: sel.ready,
+      timestamp: new Date().toISOString()
+    })
+  }).then(showThanks).catch(showThanks);
+};
+
+function showThanks() {
+  // Meta Pixel — Lead event
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Lead');
+  }
+  document.getElementById('form-main').classList.add('hidden');
+  document.getElementById('ty-state').classList.add('on');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── COUNTDOWN TIMER ──
+(function() {
+  var deadline = new Date('2026-09-17T23:59:00+03:00').getTime();
+  function pad(n) { return n < 10 ? '0' + n : n; }
+  function tick() {
+    var now = Date.now();
+    var diff = deadline - now;
+    if (diff <= 0) {
+      document.getElementById('t-days').textContent = '00';
+      document.getElementById('t-hours').textContent = '00';
+      document.getElementById('t-mins').textContent = '00';
+      document.getElementById('t-secs').textContent = '00';
+      return;
+    }
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('t-days').textContent = pad(d);
+    document.getElementById('t-hours').textContent = pad(h);
+    document.getElementById('t-mins').textContent = pad(m);
+    document.getElementById('t-secs').textContent = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+(function() {
+  var names = [
+    'Катерина С.', 'Юля М.', 'Александра П.', 'Оксана В.', 'Марина Т.',
+    'Наталя Р.', 'Дарина К.', 'Ірина Б.', 'Ольга Ш.', 'Тетяна Л.',
+    'Аліна Д.', 'Вікторія Н.', 'Людмила Г.', 'Софія М.', 'Анна Ж.'
+  ];
+  var times = ['3 хвилини тому', '7 хвилин тому', '12 хвилин тому', '18 хвилин тому', '24 хвилини тому', 'щойно'];
+
+  // Стилі тосту
+  var style = document.createElement('style');
+  style.textContent = `
+    .sp-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 20px;
+      z-index: 9999;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+      padding: 12px 16px 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 260px;
+      transform: translateX(-110%);
+      transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
+      border-left: 3px solid #9BA1BA;
+    }
+    .sp-toast.show { transform: translateX(0); }
+    .sp-toast-avatar {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3D0000, #9BA1BA);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; color: #fff; font-weight: 600;
+      flex-shrink: 0; font-family: serif;
+    }
+    .sp-toast-body { line-height: 1.35; }
+    .sp-toast-name { font-size: 13px; font-weight: 600; color: #1a1a1a; }
+    .sp-toast-text { font-size: 11px; color: #888; margin-top: 1px; }
+    .sp-toast-close {
+      position: absolute; top: 6px; right: 8px;
+      font-size: 14px; color: #bbb; cursor: pointer; line-height: 1;
+      background: none; border: none; padding: 0;
+    }
+  `;
+  document.head.appendChild(style);
+
+  function showToast() {
+    var name = names[Math.floor(Math.random() * names.length)];
+    var time = times[Math.floor(Math.random() * times.length)];
+    var initial = name.charAt(0);
+
+    var toast = document.createElement('div');
+    toast.className = 'sp-toast';
+    toast.innerHTML =
+      '<div class="sp-toast-avatar">' + initial + '</div>' +
+      '<div class="sp-toast-body">' +
+        '<div class="sp-toast-name">' + name + '</div>' +
+        '<div class="sp-toast-text">заповнила анкету · ' + time + '</div>' +
+      '</div>' +
+      '<button class="sp-toast-close" onclick="this.parentNode.remove()">✕</button>';
+
+    document.body.appendChild(toast);
+    setTimeout(function() { toast.classList.add('show'); }, 50);
+    setTimeout(function() {
+      toast.classList.remove('show');
+      setTimeout(function() { toast.remove(); }, 400);
+    }, 4000);
+  }
+
+  // Перший тост через 8 секунд, потім кожні 20-35 секунд
+  setTimeout(function() {
+    showToast();
+    setInterval(showToast, 20000 + Math.random() * 15000);
+  }, 8000);
+})();
+</script>
+
+<script>
+// ── Лайтбокс для скрінів відгуків ──
+var reviewShots = [];
+for (var i = 1; i <= 14; i++) {
+  reviewShots.push('https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/' + (i < 10 ? '0' + i : i) + '.webp');
+}
+var lbIndex = 0;
+
+window.openReviewLightbox = function(i) {
+  lbIndex = i - 1;
+  document.getElementById('lbImg').src = reviewShots[lbIndex];
+  document.getElementById('reviewLightbox').classList.add('on');
+};
+window.closeReviewLightbox = function() {
+  document.getElementById('reviewLightbox').classList.remove('on');
+};
+window.lightboxStep = function(dir) {
+  lbIndex = (lbIndex + dir + reviewShots.length) % reviewShots.length;
+  document.getElementById('lbImg').src = reviewShots[lbIndex];
+};
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('reviewLightbox').classList.contains('on')) return;
+  if (e.key === 'Escape') closeReviewLightbox();
+  if (e.key === 'ArrowLeft') lightboxStep(-1);
+  if (e.key === 'ArrowRight') lightboxStep(1);
+});
+
+// ── Повернутись до анкети (Крок 1) з блоку кейсів/відгуків ──
+window.scrollToForm = function() {
+  var panel2 = document.getElementById('panel2');
+  if (panel2 && panel2.classList.contains('active') && typeof goPanel1 === 'function') {
+    goPanel1();
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  setTimeout(function() {
+    var el = document.getElementById('fName');
+    if (el) el.focus();
+  }, 450);
+};
+</script>
+</body>
+</html>
