@@ -184,6 +184,72 @@ body{
 .pg-req-i{font-size:11px;line-height:1.5;color:#3D0000;margin-bottom:6px}
 .pg-req-i b{display:block;font-weight:600}
 .pg-req-i span{color:#9BA3B5}
+:root{--cream:#F2EEE2;--dark:#1E1C2E;--burgundy:#360202;--slate:#9BA1BA;--gold:#9BA1BA;--light-border:#DAD7CB}
+body{display:block;padding:0}
+.wrap{margin:0 auto;padding:24px 16px 40px}
+.social-proof-section{border-top:1px solid rgba(155,161,186,.25);width:100%}
+.sp-sep{max-width:600px;height:1px;margin:48px auto;background:rgba(155,161,186,.25)}
+.social-proof-section .expert-hero{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.site-footer{border-top:2px solid var(--burgundy)}
+  /* ── EXPERT HERO ── */
+  .expert-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 36px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--light-border);
+  }
+  .expert-photo-wrap {
+    flex-shrink: 0;
+    width: 230px;
+  }
+  .expert-photo {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+    display: block;
+    background: var(--light-border);
+  }
+  .expert-info { flex: 1; padding-top: 4px; }
+  .expert-name {
+    font-family: 'Prata', serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .brand-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--burgundy);
+    border: 1px solid rgba(122,37,53,0.25);
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+  }
+  .expert-facts { list-style: none; }
+  .expert-facts li {
+    font-size: 13px;
+    color: var(--slate);
+    margin-bottom: 6px;
+    line-height: 1.45;
+    display: flex;
+    gap: 7px;
+  }
+  .expert-facts li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
+  @media (max-width: 460px) {
+    .expert-hero { flex-direction: column; align-items: center; gap: 16px; }
+    .expert-info { text-align: center; }
+    .expert-facts { text-align: left; }
+    .expert-facts li { justify-content: flex-start; text-align: left; }
+  }
+
 </style>
 </head>
 <body>
@@ -215,19 +281,6 @@ body{
         <div class="fhint">Загальна сума яку заплатили клієнти</div>
       </div>
       <button class="btn" onclick="go2()">Далі →</button>
-      <div class="pg-footer">
-        <div class="pg-links">
-          <a href="https://t.me/+2wB8GPyYH6JhMTJi" target="_blank" rel="noopener">Telegram</a>
-          <a href="https://www.instagram.com/valeria.vulakh/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://docs.google.com/document/d/1wwd2imhoLRCEoE7s7H5dZQS_jwqx_HP_NdiccDPbURI/edit?usp=sharing" target="_blank" rel="noopener">Політика конфіденційності</a>
-          <a href="https://docs.google.com/document/d/1akmkH76QPV1oV2q8fft9r3eNwJqDPt1HiRpdWw8ELXY/edit?usp=sharing" target="_blank" rel="noopener">Публічна оферта</a>
-        </div>
-        <div class="pg-req">
-          <div class="pg-req-t">Реквізити</div>
-          <div class="pg-req-i"><b>ФОП Пономарьова Валерія Юріївна</b><span>ІПН: 3251216881</span></div>
-          <div class="pg-req-i"><b>ФОП Іванова Алла Анатоліївна</b><span>ІПН: 2416700220</span></div>
-        </div>
-      </div>
     </div>
 
     <div class="sec" id="sec2">
@@ -250,19 +303,6 @@ body{
       </div>
       <button class="btn" onclick="calc()">Показати результат →</button>
       <button class="btn-back" onclick="go1()">← Змінити оборот</button>
-      <div class="pg-footer">
-        <div class="pg-links">
-          <a href="https://t.me/+2wB8GPyYH6JhMTJi" target="_blank" rel="noopener">Telegram</a>
-          <a href="https://www.instagram.com/valeria.vulakh/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://docs.google.com/document/d/1wwd2imhoLRCEoE7s7H5dZQS_jwqx_HP_NdiccDPbURI/edit?usp=sharing" target="_blank" rel="noopener">Політика конфіденційності</a>
-          <a href="https://docs.google.com/document/d/1akmkH76QPV1oV2q8fft9r3eNwJqDPt1HiRpdWw8ELXY/edit?usp=sharing" target="_blank" rel="noopener">Публічна оферта</a>
-        </div>
-        <div class="pg-req">
-          <div class="pg-req-t">Реквізити</div>
-          <div class="pg-req-i"><b>ФОП Пономарьова Валерія Юріївна</b><span>ІПН: 3251216881</span></div>
-          <div class="pg-req-i"><b>ФОП Іванова Алла Анатоліївна</b><span>ІПН: 2416700220</span></div>
-        </div>
-      </div>
     </div>
 
     <div class="result" id="result">
@@ -376,23 +416,184 @@ body{
       </div>
 
       
-      <div class="pg-footer">
-        <div class="pg-links">
-          <a href="https://t.me/+2wB8GPyYH6JhMTJi" target="_blank" rel="noopener">Telegram</a>
-          <a href="https://www.instagram.com/valeria.vulakh/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://docs.google.com/document/d/1wwd2imhoLRCEoE7s7H5dZQS_jwqx_HP_NdiccDPbURI/edit?usp=sharing" target="_blank" rel="noopener">Політика конфіденційності</a>
-          <a href="https://docs.google.com/document/d/1akmkH76QPV1oV2q8fft9r3eNwJqDPt1HiRpdWw8ELXY/edit?usp=sharing" target="_blank" rel="noopener">Публічна оферта</a>
-        </div>
-        <div class="pg-req">
-          <div class="pg-req-t">Реквізити</div>
-          <div class="pg-req-i"><b>ФОП Пономарьова Валерія Юріївна</b><span>ІПН: 3251216881</span></div>
-          <div class="pg-req-i"><b>ФОП Іванова Алла Анатоліївна</b><span>ІПН: 2416700220</span></div>
-        </div>
-      </div>
       <button class="reset" onclick="resetAll()">← Порахувати ще раз</button>
     </div>
   </div>
 </div>
+
+<div class="social-proof-section">
+
+  <div class="sp-section-title">Власниці, які вже пройшли програму</div>
+
+  <!-- КЕЙСИ -->
+  <div class="cases-grid">
+
+    <div class="case-card">
+      <div class="case-header">
+        <img class="case-avatar" src="/anketa/cases/case_yaroslava.jpg" alt="Ярослава">
+        <div>
+          <div class="case-name">Ярослава</div>
+          <div class="case-role">Власниця салону манікюру poruch.beauty, Одеса</div>
+        </div>
+      </div>
+      <div class="case-points">
+        <div class="case-col">
+          <div class="case-col-title">Точка А</div>
+          <div class="case-item case-item--before">Робота 24/7 в ролі майстра</div>
+          <div class="case-item case-item--before">Хаос у фінансах</div>
+          <div class="case-item case-item--before">Чотири кредити на суму 250 000 грн</div>
+        </div>
+        <div class="case-arrow">→</div>
+        <div class="case-col">
+          <div class="case-col-title">Точка Б</div>
+          <div class="case-item case-item--after">Оборот виріс у 2 рази за час навчання</div>
+          <div class="case-item case-item--after">Впровадили прозору аналітику фінансів (P&L)</div>
+          <div class="case-item case-item--after">Збільшила команду та систематизувала процеси</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-header">
+        <img class="case-avatar" src="/anketa/cases/case_zoryana.jpg" alt="Зоряна">
+        <div>
+          <div class="case-name">Зоряна</div>
+          <div class="case-role">Власниця двох салонів NAIL ON у Львові</div>
+        </div>
+      </div>
+      <div class="case-points">
+        <div class="case-col">
+          <div class="case-col-title">Точка А</div>
+          <div class="case-item case-item--before">Перевіряла кожну дрібницю за командою</div>
+          <div class="case-item case-item--before">Хаос у фінансах — CRM не показувала реальну картину</div>
+          <div class="case-item case-item--before">Страх: «якщо я її зараз звільню, то все впаде на мене»</div>
+        </div>
+        <div class="case-arrow">→</div>
+        <div class="case-col">
+          <div class="case-col-title">Точка Б</div>
+          <div class="case-item case-item--after">Фінансова прозорість — робоча P&L-таблиця, яку веде постійно</div>
+          <div class="case-item case-item--after">Автономна команда, яка може працювати без залученості Зоряни</div>
+          <div class="case-item case-item--after">Перейшла у роль власниці-стратега, яка не займається всім у салоні</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-header">
+        <img class="case-avatar" src="/anketa/cases/case_yulia.jpg" alt="Юля Гюлмезоглу">
+        <div>
+          <div class="case-name">Юля Гюлмезоглу</div>
+          <div class="case-role">Власниця косметологічного салону «Touch Cosmetology» у Туреччині</div>
+        </div>
+      </div>
+      <div class="case-points">
+        <div class="case-col">
+          <div class="case-col-title">Точка А</div>
+          <div class="case-item case-item--before">Токсичні працівники, які тягнули всю команду вниз</div>
+          <div class="case-item case-item--before">Відсутність роботи з базою клієнтів</div>
+          <div class="case-item case-item--before">Не працювали з місцевою аудиторією</div>
+        </div>
+        <div class="case-arrow">→</div>
+        <div class="case-col">
+          <div class="case-col-title">Точка Б</div>
+          <div class="case-item case-item--after">Змінила команду</div>
+          <div class="case-item case-item--after">Системно працюють з базою клієнтів</div>
+          <div class="case-item case-item--after">Зробили рекордну касу — 200 000 грн за день</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sp-sep"></div>
+  <!-- ── EXPERT HERO (про Леру) ── -->
+  <div class="expert-hero">
+    <div class="expert-photo-wrap">
+      <img class="expert-photo" src="/anketa/lera_photo.jpg" alt="Валерія Пономарьова" onerror="this.style.background='#E2D9CE'">
+    </div>
+    <div class="expert-info">
+      <div class="expert-name">Валерія Пономарьова</div>
+      <div class="brand-tag">MANICULT · BEAUTY MBA</div>
+      <ul class="expert-facts">
+        <li>У бʼюті сфері вже більше 10 років</li>
+        <li>Пройшла шлях від маленького кабінету у 10 м² до великої студії манікюру з командою понад 20 людей — всього за два роки</li>
+        <li>Практичний досвід побудови системи в двох країнах — в Україні та Південній Африці</li>
+        <li>Салон у Кейптауні за перші місяці роботи виріс до обороту понад 55 000$</li>
+        <li>5 років керую дистанційно MANICULT в Києві витрачаючи 30 хвилин на день</li>
+        <li>Учениці ростуть ×2 в доході за 3 місяці</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sp-sep"></div>
+  <!-- ВІДГУКИ -->
+  <div class="sp-section-title">Що кажуть про роботу з Лерою</div>
+
+  <div class="reviews-carousel">
+    <div class="reviews-nav prev" onclick="document.getElementById('reviewsGrid').scrollBy({left:-300,behavior:'smooth'})">←</div>
+    <div class="reviews-grid" id="reviewsGrid">
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(1)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/01.webp" alt="Відгук ученіці 1"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(2)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/02.webp" alt="Відгук ученіці 2"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(3)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/03.webp" alt="Відгук ученіці 3"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(4)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/04.webp" alt="Відгук ученіці 4"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(5)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/05.webp" alt="Відгук ученіці 5"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(6)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/06.webp" alt="Відгук ученіці 6"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(7)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/07.webp" alt="Відгук ученіці 7"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(8)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/08.webp" alt="Відгук ученіці 8"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(9)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/09.webp" alt="Відгук ученіці 9"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(10)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/10.webp" alt="Відгук ученіці 10"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(11)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/11.webp" alt="Відгук ученіці 11"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(12)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/12.webp" alt="Відгук ученіці 12"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(13)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/13.webp" alt="Відгук ученіці 13"></a>
+      <a class="review-shot-link" href="javascript:void(0)" onclick="openReviewLightbox(14)"><img class="review-shot" loading="lazy" src="https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/14.webp" alt="Відгук ученіці 14"></a>
+    </div>
+    <div class="reviews-nav next" onclick="document.getElementById('reviewsGrid').scrollBy({left:300,behavior:'smooth'})">→</div>
+  </div>
+
+  <!-- ЦИФРИ -->
+  <div class="sp-stats">
+    <div class="sp-stat">
+      <div class="sp-stat-num">22+</div>
+      <div class="sp-stat-label">власниць пройшли програму</div>
+    </div>
+    <div class="sp-stat">
+      <div class="sp-stat-num">×2</div>
+      <div class="sp-stat-label">середнє зростання доходу за 3 місяці</div>
+    </div>
+    <div class="sp-stat">
+      <div class="sp-stat-num">30 хв</div>
+      <div class="sp-stat-label">на день на управління після програми</div>
+    </div>
+  </div>
+
+</div><!-- /social-proof-section -->
+
+<div class="review-lightbox" id="reviewLightbox" onclick="if(event.target===this) closeReviewLightbox()">
+  <button class="lb-close" onclick="closeReviewLightbox()" aria-label="Закрити">✕</button>
+  <button class="lb-nav lb-prev" onclick="lightboxStep(-1)" aria-label="Попередній">←</button>
+  <img class="lb-img" id="lbImg" src="" alt="Відгук">
+  <button class="lb-nav lb-next" onclick="lightboxStep(1)" aria-label="Наступний">→</button>
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">BEAUTY MBA</div>
+      <div class="footer-links">
+        <a href="https://t.me/+rJxxiQxqpx0xYmZi" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.instagram.com/valeria.vulakh/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://docs.google.com/document/d/1wwd2imhoLRCEoE7s7H5dZQS_jwqx_HP_NdiccDPbURI/edit?usp=sharing" target="_blank" rel="noopener">Політика конфіденційності</a>
+        <a href="https://docs.google.com/document/d/1akmkH76QPV1oV2q8fft9r3eNwJqDPt1HiRpdWw8ELXY/edit?usp=sharing" target="_blank" rel="noopener">Публічна оферта</a>
+      </div>
+    </div>
+    <div class="footer-req-label">Реквізити</div>
+    <div class="footer-req-grid">
+      <div class="footer-req-item">ФОП Пономарьова Валерія Юріївна<span>ІПН: 3251216881</span></div>
+      <div class="footer-req-item">ФОП Іванова Алла Анатоліївна<span>ІПН: 2416700220</span></div>
+    </div>
+  </div>
+</footer>
 <script>
 var REV=0;
 function v(id){return parseFloat(document.getElementById(id).value)||0;}
@@ -477,6 +678,33 @@ function calc(){
 
 function goAnketa(){window.location.href='https://beautymba.online/anketa/';}
 function resetAll(){document.getElementById('result').style.display='none';['rev','fop','mat','rent','mkt'].forEach(function(id){document.getElementById(id).value='';});go1();window.scrollTo({top:0,behavior:'smooth'});}
+// ── Лайтбокс для скрінів відгуків ──
+var reviewShots = [];
+for (var i = 1; i <= 14; i++) {
+  reviewShots.push('https://raw.githubusercontent.com/iEv0/beauty-check-up/main/shots/' + (i < 10 ? '0' + i : i) + '.webp');
+}
+var lbIndex = 0;
+
+window.openReviewLightbox = function(i) {
+  lbIndex = i - 1;
+  document.getElementById('lbImg').src = reviewShots[lbIndex];
+  document.getElementById('reviewLightbox').classList.add('on');
+};
+window.closeReviewLightbox = function() {
+  document.getElementById('reviewLightbox').classList.remove('on');
+};
+window.lightboxStep = function(dir) {
+  lbIndex = (lbIndex + dir + reviewShots.length) % reviewShots.length;
+  document.getElementById('lbImg').src = reviewShots[lbIndex];
+};
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('reviewLightbox').classList.contains('on')) return;
+  if (e.key === 'Escape') closeReviewLightbox();
+  if (e.key === 'ArrowLeft') lightboxStep(-1);
+  if (e.key === 'ArrowRight') lightboxStep(1);
+});
+
+
 </script>
 </body>
 </html>
